@@ -17,6 +17,7 @@
 // const something = getFour;
 // console.log(something)
 
-const sayHello = () => {
-  console.log('Hello');
-};
+// const sayHello = () => {
+//   console.log('Hello');
+// }
+
