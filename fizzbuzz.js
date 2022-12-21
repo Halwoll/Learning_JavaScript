@@ -1,24 +1,15 @@
-// Write a fizzBuzz function in JavaScript. As a reminder, this function should take a number as argument, and then either:
-
-// Return "Fizz" if this number is divisible by 3.
-// Return "Buzz" if this number is divisible by 5.
-// Return "FizzBuzz" if this number is divisible by both 5 and 3.
-// Otherwise, Return the number itself.
-
-const fizzBuzz = (number) => {
-  
-  if (number % 3 === 0 && number % 5 === 0) {
-    return 'Fizzbuzz';
-  }
-  else if (number % 3 === 0) {
-    return 'Fizz';
-  }
-  else if (number % 5 === 0) {
-    return 'Buzz';
-  }
-  else {
-    return number;
+const fizzBuzzUntil = (number) => {
+  for (let i = 1; i <= number; i++ ) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log ("Fizzbuzz");
+    } else if (i % 3 === 0) {
+        console.log ("Fizz");
+    } else if (i % 5 === 0) {
+        console.log ("Buzz");
+    } else {
+      console.log (i);
+    }
   }
 }
 
-module.exports = fizzBuzz;
+module.exports = fizzBuzzUntil;
