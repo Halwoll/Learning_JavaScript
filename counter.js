@@ -1,7 +1,8 @@
+let counter = 0;
+
 const increment = () => {
-  let counter = 0;
   console.log(counter);
+  counter++;
 }
 
-
-setInterval(increment, 1000);
+setInterval(increment, 1000)
